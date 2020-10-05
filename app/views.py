@@ -3,7 +3,7 @@ from app import app
 import json
 
 
-@app.route("/")
+@app.route("/predict" , methods=["POST"])
 def hello():
     resonse  = {
         "success":True,
